@@ -1,0 +1,12 @@
+## default to eol-lf
+* text eol=lf
+
+# Denote all files that are truly binary and should not be modified.
+wrapper-* binary
+*.dll binary
+*.exe binary
+*.png binary
+*.so binary
+*.sl binary
+*.jnilib binary
+*.dylib binary
