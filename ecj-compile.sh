@@ -6,4 +6,4 @@ export CP="$MVN_REPO/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.p
 export SRC=baz/src/main/java
 
 # Workaround: add '-proc:none' option to ECJ build
-java -jar $MVN_REPO/org/eclipse/jdt/ecj/3.31.0/ecj-3.31.0.jar -nowarn -17 -cp "$CP" -d baz/target/classes $SRC/com/foobar/showme/baz/AbstractDurable.java $SRC/com/foobar/showme/baz/Durable.java $SRC/com/foobar/showme/baz/JPADurable.java $SRC/com/foobar/showme/baz/TimestampedJPADurable.java
+java -jar $MVN_REPO/org/eclipse/jdt/ecj/3.36.0/ecj-3.36.0.jar -nowarn -17 -cp "$CP" -d baz/target/classes $SRC/com/foobar/showme/baz/AbstractDurable.java $SRC/com/foobar/showme/baz/Durable.java $SRC/com/foobar/showme/baz/JPADurable.java $SRC/com/foobar/showme/baz/TimestampedJPADurable.java
