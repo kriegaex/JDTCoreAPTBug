@@ -15,6 +15,8 @@
     <aspectj.version>1.9.21</aspectj.version>
     <jakarta.persistence.version>3.1.0</jakarta.persistence.version>
     <querydsl.version>5.0.0</querydsl.version>
+    <!-- https://github.com/eclipse-jdt/eclipse.jdt.core/issues/565 -->
+    <ecj.version>3.36.0</ecj.version>
   </properties>
 
   <modules>
@@ -44,6 +46,12 @@
         <artifactId>querydsl-jpa</artifactId>
         <classifier>jakarta</classifier>
         <version>${querydsl.version}</version>
+      </dependency>
+      <!-- https://github.com/eclipse-jdt/eclipse.jdt.core/issues/565 -->
+      <dependency>
+        <groupId>org.eclipse.jdt</groupId>
+        <artifactId>ecj</artifactId>
+        <version>${ecj.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
